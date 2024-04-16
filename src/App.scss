@@ -1,0 +1,51 @@
+$color-primary: #f1f1f1;
+$color-secondary: #d6d6d6;
+$color-dark: #343434;
+$bg-start: #101010;
+$bg-end: #1a1a1a;
+$border-card: 0 solid #e5e7eb;
+
+#root {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(./assets/myFont.woff2);
+}
+
+@font-face {
+    font-family: myFontOne;
+    src: url(./assets/myFontOne.woff2);
+}
+
+body {
+    background: linear-gradient(90deg, $bg-start 40%, $bg-end 70%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $color-primary;
+    font-family: "myFont", sans-serif;
+    font-size: 16px;
+}
+
+header {
+    padding: 2.5rem 15rem;
+
+    .header--name h1 {
+        font-family: 'myFontOne', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5.75rem;
+        letter-spacing: -.025em;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+}
+
+.header--desc {
+    line-height: 1.625;
+    font-size: 1.125rem;
+    max-width: 24rem;
+}
