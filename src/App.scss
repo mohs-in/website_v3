@@ -42,10 +42,16 @@ header {
         line-height: 1;
         margin-bottom: 0;
     }
+
+    .header--desc {
+        line-height: 1.625;
+        font-size: 1.125rem;
+        max-width: 24rem;
+    }
+
+    .header--desc .skills {
+        margin-top: 1em;
+        display: inline-block;
+    }
 }
 
-.header--desc {
-    line-height: 1.625;
-    font-size: 1.125rem;
-    max-width: 24rem;
-}
