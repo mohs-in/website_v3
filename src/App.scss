@@ -21,17 +21,16 @@ $border-card: 0 solid #e5e7eb;
 }
 
 body {
-    background: linear-gradient(90deg, $bg-start 40%, $bg-end 70%);
+    background: linear-gradient(90deg, $bg-start 40%, $bg-end 70%) no-repeat fixed;
     margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     color: $color-primary;
     font-family: "myFont", sans-serif;
     font-size: 16px;
+    padding: 0 15em;
 }
 
 header {
-    padding: 2.5rem 15rem;
+    padding-top: 2.5em; padding-bottom: 5.5em;
 
     .header--name h1 {
         font-family: 'myFontOne', sans-serif;
@@ -41,12 +40,30 @@ header {
         letter-spacing: -.025em;
         line-height: 1;
         margin-bottom: 0;
+        transition-timing-function: linear;
+        // transition: 5.2s;
     }
 
     .header--desc {
         line-height: 1.625;
         font-size: 1.125rem;
-        max-width: 24rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        p {
+            max-width: 24em;
+        }
+
+        .social-skills {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            padding: 1em .75em .25em .75em;
+            border: 1px solid $color-dark;
+        }
     }
 
     .header--desc .skills {
