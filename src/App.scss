@@ -21,7 +21,8 @@ $border-card: 0 solid #e5e7eb;
 }
 
 body {
-    background: linear-gradient(90deg, $bg-start 40%, $bg-end 70%) no-repeat fixed;
+    // background: linear-gradient(90deg, $bg-start 40%, $bg-end 70%) no-repeat fixed;
+    background-color: $bg-start;
     margin: 0;
     color: $color-primary;
     font-family: "myFont", sans-serif;
@@ -40,8 +41,6 @@ header {
         letter-spacing: -.025em;
         line-height: 1;
         margin-bottom: 0;
-        transition-timing-function: linear;
-        // transition: 5.2s;
     }
 
     .header--desc {
@@ -55,7 +54,7 @@ header {
             max-width: 24em;
         }
 
-        .social-skills {
+        .social-links {
             display: flex;
             flex-direction: column;
         }
@@ -72,3 +71,31 @@ header {
     }
 }
 
+@media (max-width: 480px) {
+    body {
+        padding: 2em 1em;
+    }
+
+    header {
+        .header--name h1 {
+            font-size: 3.75rem;
+            position: relative;
+        }
+
+        .header--desc {
+            .social-links {
+                flex-direction: row;
+                margin-top: -14em;
+
+                #gh, #in {
+                    border: none;
+                    position: absolute;
+                    padding: 1em;
+                }
+                #gh { margin: 5em -5em; }
+
+                #in { margin: 5em -3em; }
+            }
+        }
+    }
+}

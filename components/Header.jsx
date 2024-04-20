@@ -18,8 +18,8 @@ export default function Header() {
                 <span className='skills'>Tech Stack I'm interested in : <br /> React, Typescript, Next.js, Express, Node.js</span></p>
                 
                 <div className='social-links'>
-                    <a href="https://github.com/mohs-in" target='_blank'><img src={gh} alt="" /></a>
-                    <a href="https://www.linkedin.com/in/mohsinkhansab" target='_blank'><img src={lin} alt="" /></a>
+                    <a href="https://github.com/mohs-in" target='_blank' id='gh'><img src={gh} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/mohsinkhansab" target='_blank' id='in'><img src={lin} alt="" /></a>
                 </div>
                 
             </div>
