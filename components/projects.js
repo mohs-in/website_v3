@@ -1,12 +1,14 @@
 
 export default [
     {
+        id:1,
         date: '04-19-2024',
         title: 'Leads Tracker',
         description: "A chrome extension to save URL's",
         github: 'https://github.com/mohs-in/leads-tracker',
     },
     {
+        id:2,
         date: '04-03-2024',
         title: 'Tenzies Game',
         description: 'A fun game to play built w/ React.js',
@@ -14,6 +16,7 @@ export default [
         demo: 'https://tenzies.mohs.ink/'
     },
     {
+        id:3,
         date: '03-17-2024',
         title: 'Meme Generator',
         description: 'Generate memes with custom text',
@@ -21,6 +24,7 @@ export default [
         demo: 'https://generatememe.mohs.ink'
     },
     {
+        id:4,
         date: '03-12-2024',
         title: 'GPT',
         description: 'Get Passwords in no Time',
@@ -28,6 +32,7 @@ export default [
         demo: 'https://generatepassword.mohs.ink/'
     },
     {
+        id:5,
         date: '03-08-2024',
         title: 'NFT Site',
         description: 'Built with React.js & Sass',
@@ -35,6 +40,7 @@ export default [
         demo: 'https://nft.mohs.ink'
     },
     {
+        id:6,
         date: '03-05-2024',
         title: 'WeBarelyWork',
         description: 'Explore workspaces for lazy devs',
@@ -42,6 +48,7 @@ export default [
         demo: 'https://workspace.mohs.ink'
     },
     {
+        id:7,
         date: '02-24-2024',
         title: 'Travel Journal',
         description: 'Places I have been to in imagination',
@@ -49,6 +56,7 @@ export default [
         demo: 'https://traveljournal.mohs.ink'
     },
     {
+        id:8,
         date: '02-20-2024',
         title: 'Airbnb Site',
         description: 'Airbnb Clone Basic',
