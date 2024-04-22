@@ -71,9 +71,85 @@ header {
     }
 }
 
+.projects-div {
+    display: flex;
+    width: 70em;
+    flex-wrap: wrap;
+}
+
+article {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    border: 1px solid $color-dark;
+    border-radius: 1.25rem;
+    width: fit-content;
+    margin: .7em;
+    max-width: 14em;
+    flex: 0 0 55rem;
+    box-shadow: inset 1px 1px 4px #fff, inset -1px -1px 5px #000;
+
+}
+
+.arc--date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    span {
+        font-size: .75rem;
+        line-height: 1rem;
+    }
+}
+
+.arc--h2 {
+    margin-top: 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: $color-secondary;
+    word-wrap: break-word;
+}
+
+.arc--p {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top: 1rem;
+    color: $color-secondary;
+    word-wrap: break-word;
+}
+
+.arc--links {
+    display: flex;
+    flex-direction: row;
+    padding-top: .75rem;
+    gap: .75rem;
+    a {
+        color: $color-secondary;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        padding: .75rem 1rem;
+        background-color: #70707008;
+        border-radius: .25rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 1.25rem;
+        text-decoration: inherit;
+    }
+    img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
 @media (max-width: 480px) {
     body {
         padding: 2em 1em;
+        margin: .5em;
     }
 
     header {
@@ -95,6 +171,24 @@ header {
                 #gh { margin: 5em -5em; }
 
                 #in { margin: 5em -3em; }
+            }
+        }
+    }
+
+    .projects-div {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        max-width: 19rem;
+        flex-direction: row ;
+
+        .arc--links {
+            flex-direction: column;
+            a {
+                width: 50%;
             }
         }
     }
