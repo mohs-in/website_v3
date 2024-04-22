@@ -17,7 +17,10 @@ export default function Hero () {
         <div className="projects-div">
             {projects}
         </div>
-        
+        <p className="prev-websites">
+            <a href="http://v1.mohs.ink/">website V1</a> 
+            <a href="http://v2.mohs.ink/">website V2</a>
+        </p>
     </main>
     </>
     )

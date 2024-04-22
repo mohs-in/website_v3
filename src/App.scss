@@ -71,6 +71,15 @@ header {
     }
 }
 
+.prev-websites {
+    margin-left: 75%;
+    a {
+        color: $color-secondary;
+        padding: 1em;
+        text-decoration: underline;
+    }
+}
+
 .projects-div {
     display: flex;
     width: 70em;
@@ -175,6 +184,10 @@ article {
                 #in { margin: 5em -3em; }
             }
         }
+    }
+
+    .prev-websites {
+        margin-left: 40%;
     }
 
     .projects-div {
