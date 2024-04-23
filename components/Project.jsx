@@ -6,15 +6,7 @@ export default function Project(project) {
             <div>
                 <div className="arc--date">
                     <span>
-                        {project.date ? (
-                        <time dateTime={new Date(project.date).toISOString()}>
-                            {Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(
-                            new Date(project.date),
-                            )}
-                        </time>
-                        ) : (
-                        <span>SOON</span>
-                        )}
+                        {project.date }
                     </span>
                 </div>
                 <h2 className="arc--h2"> {project.title} </h2>

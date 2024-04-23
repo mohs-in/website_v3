@@ -1,11 +1,9 @@
 import Project from "./Project"
 import projectData from './projects'
-import { useId } from 'react';
 
 export default function Hero () {
 
     const projects = projectData.map(proj => {
-        console.log(proj.id)
         return(
             <Project 
                 key={proj.id}

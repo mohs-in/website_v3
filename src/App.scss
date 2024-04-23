@@ -159,7 +159,7 @@ article {
 
 @media (max-width: 480px) {
     body {
-        padding: 2em 1em;
+        padding: 1em 1em;
         margin: .5em;
     }
 
@@ -187,7 +187,7 @@ article {
     }
 
     .prev-websites {
-        margin-left: 20%;
+        margin-left: 30%;
     }
 
     .projects-div {
@@ -196,10 +196,10 @@ article {
     }
 
     article {
-        width: 100%;
+        width: 90%;
         max-width: 19rem;
         flex-direction: row ;
-
+        margin: .7em 0;
         .arc--links {
             flex-direction: column;
             a {
