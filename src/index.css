@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'myFont';
+  src: url('/src/assets/myFont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'myFontOne';
+  src: url('/src/assets/myFontOne.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.inset-shadow {
+  box-shadow: inset 1px 1px 7px #343434, inset -1px -1px 5px #000;
+}
+
+.word-wrap-break {
+  word-wrap: break-word;
+}
+
+.svg-light {
+  color: #d6d6d6;
+}
+

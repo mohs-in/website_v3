@@ -12,14 +12,14 @@ export default [
         id:8,
         date: '19 Apr 2024',
         title: 'Leads Tracker',
-        description: "Extension to save URL's",
+        description: "A chrome extension to save URL's",
         github: 'https://github.com/mohs-in/leads-tracker',
     },
     {
         id:7,
         date: '3 Apr 2024',
         title: 'Tenzies Game',
-        description: 'A fun game to play in free time',
+        description: 'A fun game to play built w/ React.js',
         github: 'https://github.com/mohs-in/tenzies-game',
         demo: 'https://tenzies.mohs.ink/'
     },
@@ -27,7 +27,7 @@ export default [
         id:6,
         date: '17 Mar 2024',
         title: 'Meme Generator',
-        description: 'Memes w/ custom text',
+        description: 'Generate memes with custom text',
         github: 'https://github.com/mohs-in/meme-generator',
         demo: 'https://generatememe.mohs.ink'
     },
@@ -51,7 +51,7 @@ export default [
         id:3,
         date: '5 Mar 2024',
         title: 'WeBarelyWork',
-        description: 'Workspaces for lazy devs',
+        description: 'Explore workspaces for lazy devs',
         github: 'https://github.com/mohs-in/cowork-space',
         demo: 'https://workspace.mohs.ink'
     },
