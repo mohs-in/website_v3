@@ -20,8 +20,8 @@ export default function Hero () {
         </div>
         <div className="flex">
             <p className="ml-auto">
-                <a className='text-light-secondary p-4 underline' href="http://v1.mohs.ink/">website V1</a> 
-                <a className="text-light-secondary p-4 underline" href="http://v2.mohs.ink/">website V2</a>
+                <a className='text-light-secondary p-4 underline' href="https://v1-ms.vercel.app/">website V1</a> 
+                <a className="text-light-secondary p-4 underline" href="https://v2-ms.vercel.app/">website V2</a>
             </p>
         </div>
         
