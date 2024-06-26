@@ -4,10 +4,13 @@ import Hero from './components/Hero'
 function App() {
 
   return (
-    <>
-      <Header />
-      <Hero />
-    </>
+    <div className='flex items-center justify-center'>
+      <div className='lg:max-w-4xl'>
+        <Header />
+        <Hero />
+      </div>
+    </div>
+    
   )
 }
 
