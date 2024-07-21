@@ -6,7 +6,7 @@ export default function Header() {
         <>
             <header className='pt-24 pb-32'>
 
-                <h1 className='font-myFontOne font-normal text-6xl md:text-8xl mb-6 tracking-tight animate-bounce-2 md:animate-spin-slow relative'>Mohsin <br /> Khansab</h1>
+                <h1 className='font-myFontOne font-normal text-6xl md:text-8xl mb-6 tracking-tight animate-bounce-2 relative'>Mohsin <br /> Khansab</h1>
 
                 <div className='leading-relaxed text-lg flex justify-between w-full '>
 
