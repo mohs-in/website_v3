@@ -1,6 +1,13 @@
 
 export default [
     {
+        id:9,
+        date: '4 Jul 2024',
+        title: 'Job Portal App',
+        description: "App made using React and Spring Boot",
+        github: 'https://github.com/mohs-in/job-portal-app',
+    },
+    {
         id:8,
         date: 'Ongoing...',
         title: 'Van Life',
@@ -14,6 +21,7 @@ export default [
         title: 'Leads Tracker',
         description: "A chrome extension to save URL's",
         github: 'https://github.com/mohs-in/leads-tracker',
+        demo: 'https://leads-tracker-ms.vercel.app/'
     },
     {
         id:6,
