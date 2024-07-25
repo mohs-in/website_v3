@@ -2,14 +2,15 @@
 export default [
     {
         id:9,
-        date: '4 Jul 2024',
-        title: 'Job Portal App',
-        description: "App made using React and Spring Boot",
-        github: 'https://github.com/mohs-in/job-portal-app',
+        date: '26 Jul 2024',
+        title: 'Career Cascade',
+        description: "An application for job seekers made using Springboot, React, Postgres",
+        github: 'https://github.com/mohs-in/career-cascade',
+        demo: 'https://career-cascade.vercel.app/'
     },
     {
         id:8,
-        date: 'Ongoing...',
+        date: '4 Jul 2024',
         title: 'Van Life',
         description: "App made using React router",
         github: 'https://github.com/mohs-in/van-life',
