@@ -1,16 +1,13 @@
-import Header from './components/Header'
 import Hero from './components/Hero'
-
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 function App() {
 
   return (
-    <div className='flex items-center justify-center'>
-      <div className='lg:max-w-4xl'>
-        <Header />
-        <Hero />
-      </div>
-    </div>
-    
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Hero /> }/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

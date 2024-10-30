@@ -7,11 +7,11 @@ export default function Project(project) {
                             transition ease-in delay-150 duration-300 hover:-translate-y-1 hover:scale-110'
         >
             <div>
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                     <span className='text-xs leading-none'>
                         {project.date }
                     </span>
-                </div>
+                </div> */}
                 <h2 className="mt-0 text-lg leading-relaxed font-medium text-light-secondary word-wrap-break"> {project.title} </h2>
                 <p className="text-sm leading-tight mt-4 text-light-secondary word-wrap-break"> {project.description} </p>
             </div>
