@@ -48,7 +48,7 @@ export default function Body () {
     <main>
         <h2 
             className = { " scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 " } 
-            id = " projects "
+            id = "projects"
         > Projects </h2>
 
         <div className = " grid md:grid-cols-3 gap-x-1 gap-y-1 w-full ">
@@ -63,7 +63,7 @@ export default function Body () {
         </div>
 
         <h2 className = { "scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0" } 
-            id = " blogs "
+            id = "blogs"
         > Blogs </h2>    
         
         <div className = " grid md:grid-cols-3 gap-x-1 gap-y-1 w-full ">
