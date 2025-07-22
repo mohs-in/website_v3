@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react'
 
 export default function Body () {
 
-    const [ renderCount, setRenderCount ] = useState( 3 );
+    const [ projectsRenderCount, setProjectsRenderCount ] = useState(3);
+    const [ blogsRendercount, setBlogsRenderCount ] = useState(3);
 
     const projects = projectData.map( proj => {
         return (
@@ -17,20 +18,6 @@ export default function Body () {
         )
     })
 
-    const [ renderProjects, setRenderProjects ] = useState( [ projects[0], projects[1], projects[2] ] );
-
-    useEffect( () => {
-
-        setRenderProjects( () => {
-            let newResult = [];
-            for ( let i = 0; i < renderCount; i++) {
-                newResult.push(projects[i]);
-            }
-            return newResult;
-        })
-
-    }, [ renderCount ])
-
     const blogs = blogData.map( blog => {
         return (
             <Blog 
@@ -40,8 +27,36 @@ export default function Body () {
         )
     })
 
-    function handleRenderCount() {
-        setRenderCount( prev => prev + 3 );
+    const [ renderProjects, setRenderProjects ] = useState( [ projects[0], projects[1], projects[2] ] );
+    const [ renderBlogs, setRenderBlogs ] = useState([blogs[0], blogs[1], blogs[2]]);
+
+    useEffect( () => {
+
+        setRenderProjects( () => {
+            let newResult = [];
+            for ( let i = 0; i < projectsRenderCount; i++) {
+                newResult.push(projects[i]);
+            }
+            return newResult;
+        })
+
+        setRenderBlogs( () => {
+            let newResult = [];
+            for ( let i = 0; i < blogsRendercount; i++) {
+                newResult.push(blogs[i]);
+            }
+            return newResult;
+        })
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [ projectsRenderCount, blogsRendercount ])
+
+    function handleProjectsRenderCount() {
+        setProjectsRenderCount( prev => prev + 3 );
+    }
+
+    function handleBlogssRenderCount() {
+        setBlogsRenderCount( prev => prev + 3 );
     }
 
     return (
@@ -56,9 +71,9 @@ export default function Body () {
         </div>
         
         <div className = " flex justify-center items-center block ">
-            { ( projects.length != renderCount ) && 
+            { ( projects.length > projectsRenderCount ) && 
                 <p className = " px-3 py-2 font-semibold border-2 border-grey cursor-pointer rounded-lg " 
-                    onClick = { handleRenderCount }
+                    onClick = { handleProjectsRenderCount }
                 > Show more... </p>}
         </div>
 
@@ -67,7 +82,14 @@ export default function Body () {
         > Blogs </h2>    
         
         <div className = " grid md:grid-cols-3 gap-x-1 gap-y-1 w-full ">
-            { blogs }
+            { renderBlogs }
+        </div>
+
+        <div className = " flex justify-center items-center block ">
+            { ( blogs.length >= blogsRendercount ) && 
+                <p className = " px-3 py-2 font-semibold border-2 border-grey cursor-pointer rounded-lg " 
+                    onClick = { handleBlogssRenderCount }
+                > Show more... </p>}
         </div>
 
         <div className = " flex ">
