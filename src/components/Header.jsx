@@ -25,7 +25,8 @@ export default function Header() {
 
                     <p className='max-w-24em'>Full-stack Software Engineer. <br />Currently improving my proficiency in writing Clean, Efficient and Scalable code. <br />
 
-                        <span className='mt-4 inline-block'>Tech Stack I&apos;m interested in : <br /> React, Typescript, Next.js, Express, Node.js</span></p>
+                        <span className='mt-4 inline-block'>Tech Stack I&apos;m interested in : <br /> React JS, Typescript, Java, Spring Boot, Tailwind CSS</span>
+                    </p>
 
                     {/* <div className='flex flex-row md:flex-col absolute top-10 right-5 md:relative'> */}
                     
