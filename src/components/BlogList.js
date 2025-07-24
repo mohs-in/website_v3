@@ -1,5 +1,11 @@
 export default [
     {
+        id: 4,
+        title: "Computer Networks",
+        description: "Understand key concepts and basics of computer networks",
+        link: "https://mohsinkhansab.hashnode.dev/introduction-to-computer-networks-key-concepts-and-basics"
+    },
+    {
         id: 3,
         title: "Selection Sort",
         description: "Selection Sort Algorithm explained",
